@@ -7,9 +7,9 @@ def generate_launch_description():
         [
             Node(
                 package="ros_tcp_endpoint",
-                executable="default_server_endpoint",
+                executable="ros_tcp_endpoint",
                 emulate_tty=True,
-                parameters=[{"ROS_IP": "0.0.0.0"}, {"ROS_TCP_PORT": 10000}],
+                parameters=[{"ROS_IP": "127.0.0.1"}, {"ROS_TCP_PORT": 10000}],
             )
         ]
     )
